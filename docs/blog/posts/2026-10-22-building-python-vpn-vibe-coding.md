@@ -94,7 +94,30 @@ AI는 이 지시사항을 완벽히 이해하고 다음과 같은 간결한 패�
 
 ---
 
-## 5. 마치며: 직접 만든 도구가 주는 즐거움
+## 5. 📥 배포 파일 다운로드 (Vibe VPN v1.0.0)
+
+직접 테스트해 보실 수 있도록 클라이언트, 서버, 대칭키 생성기, 설정 템플릿이 모두 포함된 배포 패키지(.ZIP)를 준비했습니다.
+
+<div class="vibe-card" style="border-left: 4px solid #00e5ff; margin: 2rem 0; background: rgba(18, 22, 36, 0.85);">
+  <span class="vibe-badge">Distribution v1.0.0</span>
+  <h3 style="margin-top: 0.5rem;">📦 Python Vibe VPN 전체 소스코드 패키지</h3>
+  <p>
+    Python 3.11+ 비동기 I/O와 ChaCha20-Poly1305 기반 초경량 터널링 구현체입니다.<br>
+    클라이언트(<code>client.py</code>), 서버(<code>server.py</code>), 키 생성기(<code>keygen.py</code>) 및 환경설정(<code>config.json</code>)이 모두 포함되어 있습니다.
+  </p>
+  <div style="margin: 1.5rem 0 1rem;">
+    <a href="../../assets/downloads/vibe-vpn-v1.0.0.zip" class="md-button md-button--primary" download>
+      ⚡ Vibe VPN v1.0.0 다운로드 (.ZIP)
+    </a>
+  </div>
+  <small style="color: var(--md-default-fg-color--light); display: block; font-family: var(--md-code-font-family); font-size: 0.8rem;">
+    SHA-256: E66599C5F8CC9A0ABADCEE55BDDA4D875E46FD9C6281A2AFD3FDB84D4C1D54CF | 크기: ~4.0 KB
+  </small>
+</div>
+
+---
+
+## 6. 마치며: 직접 만든 도구가 주는 즐거움
 
 이번 프로젝트를 통해 **Python과 현대 AI 에이전트의 조합이 단순한 웹 개발을 넘어 저수준 시스템/네트워크 프로그래밍 영역에서도 얼마나 강력한 생산성을 발휘하는지**를 체감할 수 있었습니다.
 
