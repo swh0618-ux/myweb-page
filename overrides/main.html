@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {# Google AdSense Script Injection #}
+  {% if config.extra.google_adsense_client %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.google_adsense_client }}"
+     crossorigin="anonymous"></script>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
