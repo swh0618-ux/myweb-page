@@ -83,6 +83,7 @@ nav:
   - "Home": index.md
   - "Projects": 
       - "Overview": projects/index.md
+      - "Antigravity Plugins": projects/antigravity-plugins.md
       - "Python Vibe VPN": projects/python-vibe-vpn.md
       - "Kazan Agent Hub": projects/kazan-agent-hub.md
       - "Item Asset Forge": projects/item-asset-forge.md

@@ -11,7 +11,16 @@ AI 에이전트와의 협업을 통해 신속하게 프로토타이핑하고 완
 
 <div class="vibe-grid">
   <div class="vibe-card">
-    <span class="vibe-badge">Network & Security</span>
+    <span class="vibe-badge">Agent Tooling & MCP</span>
+    <h3>Antigravity Plugins & MCP Suite</h3>
+    <p>
+      AI 에이전트에게 브라우저(Chrome/Edge) 직접 제어, DOM 조작, 스크린샷 캡처 및 시스템 도구 확장 능력을 부여하는 플러그인 생태계.
+    </p>
+    <a href="antigravity-plugins.md" class="md-button md-button--primary">아키텍처 & 프롬프트 보기 →</a>
+  </div>
+
+  <div class="vibe-card">
+    <span class="vibe-badge purple">Network & Security</span>
     <h3>Python Vibe VPN</h3>
     <p>
       Python 3.11 비동기 I/O와 ChaCha20-Poly1305 기반 초경량 맞춤형 암호화 VPN 터널. 상용 솔루션의 무거운 원격 측정을 걷어낸 초고속 터널링.
