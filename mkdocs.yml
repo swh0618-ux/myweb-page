@@ -92,8 +92,8 @@ nav:
   - "Privacy": privacy.md
 
 extra:
-  # 구글 애드센스 퍼블리셔 ID (예: "ca-pub-1234567890123456")
-  google_adsense_client: "ca-pub-XXXXXXXXXXXXXXXX"
+  # 구글 애드센스 퍼블리셔 ID
+  google_adsense_client: "ca-pub-4587488147003975"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/swh0618-ux
