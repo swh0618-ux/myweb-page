@@ -47,6 +47,6 @@ graph TD
 
 ## 📬 Contact & Links
 
-* **GitHub**: [@your-username](https://github.com)
+* **GitHub**: [@swh0618-ux](https://github.com/swh0618-ux)
 * **Email**: your-email@example.com
 * **Community**: Discord / Dev Community
