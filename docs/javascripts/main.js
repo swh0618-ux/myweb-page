@@ -258,6 +258,117 @@
   }
 
   /* ----------------------------------------------------------
+     9. 3D CARD STACK & VERTICAL COVERFLOW INTERACTION
+  ---------------------------------------------------------- */
+
+  function initStackCarousel() {
+    const deck = document.querySelector('.stack-cards-deck');
+    const cards = document.querySelectorAll('.stack-card');
+    if (!cards.length) return;
+
+    const prevBtn = document.querySelector('.stack-nav-prev');
+    const nextBtn = document.querySelector('.stack-nav-next');
+    const activeNum = document.querySelector('.stack-nav-counter .active-num');
+    const totalNum = document.querySelector('.stack-nav-counter .total-num');
+
+    if (totalNum) {
+      totalNum.textContent = String(cards.length).padStart(2, '0');
+    }
+
+    // Default tilt angles for organic stacked deck look (matching reference image)
+    const tiltPresets = [
+      { z: -4.5, x: 3.5 },
+      { z: 3.8,  x: 2.2 },
+      { z: -2.8, x: 3.0 },
+      { z: 4.2,  x: -2.0 },
+      { z: -3.5, x: 2.5 }
+    ];
+
+    cards.forEach(function (card, index) {
+      card.style.setProperty('--card-index', index);
+      const preset = tiltPresets[index % tiltPresets.length];
+      card.style.setProperty('--tilt-angle', preset.z + 'deg');
+      card.style.setProperty('--tilt-x', preset.x + 'deg');
+
+      // 3D Mouse Tilt on hover (Desktop)
+      card.addEventListener('mousemove', function (e) {
+        if (window.innerWidth < 992) return;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const rotateY = (x / (rect.width / 2)) * 5;
+        const rotateX = -(y / (rect.height / 2)) * 5;
+        card.style.transform =
+          'perspective(1200px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-8px) scale(1.02)';
+      });
+
+      card.addEventListener('mouseleave', function () {
+        const preset = tiltPresets[index % tiltPresets.length];
+        card.style.transform = '';
+      });
+    });
+
+    // Scroll Stacking & Active Index Observer
+    let currentIndex = 0;
+
+    function updateActiveCardOnScroll() {
+      const viewportCenter = window.innerHeight * 0.45;
+      let closestIdx = 0;
+      let minDistance = Infinity;
+
+      cards.forEach(function (card, idx) {
+        const rect = card.getBoundingClientRect();
+        const cardCenter = rect.top + rect.height * 0.3;
+        const distance = Math.abs(cardCenter - viewportCenter);
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestIdx = idx;
+        }
+
+        // Stacking depth / dim effect for cards that have stuck to the top
+        if (rect.top <= 140) {
+          const depth = (140 - rect.top) / 400;
+          const scale = Math.max(0.92, 1 - depth * 0.08);
+          const brightness = Math.max(0.75, 1 - depth * 0.25);
+          card.style.filter = 'brightness(' + brightness + ')';
+        } else {
+          card.style.filter = '';
+        }
+      });
+
+      if (closestIdx !== currentIndex) {
+        currentIndex = closestIdx;
+        if (activeNum) {
+          activeNum.textContent = String(currentIndex + 1).padStart(2, '0');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', updateActiveCardOnScroll, { passive: true });
+    updateActiveCardOnScroll();
+
+    // Navigation Buttons (Vertical Step Navigation)
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        if (currentIndex > 0) {
+          currentIndex--;
+          cards[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        if (currentIndex < cards.length - 1) {
+          currentIndex++;
+          cards[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+  }
+
+  /* ----------------------------------------------------------
      INIT — run all on DOMContentLoaded
   ---------------------------------------------------------- */
 
@@ -270,6 +381,7 @@
     initSmoothScroll();
     initCountUp();
     initThemeGlow();
+    initStackCarousel();
   }
 
   if (document.readyState === 'loading') {
