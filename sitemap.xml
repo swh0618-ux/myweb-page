@@ -2,50 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kazan.pe.kr/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/about/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/privacy/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/blog/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/blog/posts/2026-10-22-building-python-vpn-vibe-coding/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/blog/posts/2026-10-22-welcome-vibe-coding/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/blog/posts/2026-10-23-building-antigravity-plugins-mcp/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/lab/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/lab/antigravity-plugins/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/lab/item-asset-forge/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/lab/kazan-agent-hub/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/lab/python-vibe-vpn/</loc>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/projects/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/projects/antigravity-plugins/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/projects/item-asset-forge/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/projects/kazan-agent-hub/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
     </url>
     <url>
          <loc>https://kazan.pe.kr/projects/python-vibe-vpn/</loc>
-         <lastmod>2026-10-22</lastmod>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/signal/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/signal/posts/2026-10-22-building-python-vpn-vibe-coding/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/signal/posts/2026-10-22-welcome-vibe-coding/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/signal/posts/2026-10-23-building-antigravity-plugins-mcp/</loc>
+         <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kazan.pe.kr/tools/</loc>
+         <lastmod>2026-10-23</lastmod>
     </url>
 </urlset>

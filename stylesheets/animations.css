@@ -1,0 +1,287 @@
+/* ============================================================
+   animations.css — Kazan Terminal × Glass Morphism
+   Keyframes, scroll fade, typing cursor, orbit, particles
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. Base Keyframes
+   ---------------------------------------------------------- */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ----------------------------------------------------------
+   2. Scroll Fade-In Utility Classes
+   ---------------------------------------------------------- */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-up.delay-1 { transition-delay: 0.1s; }
+.fade-in-up.delay-2 { transition-delay: 0.2s; }
+.fade-in-up.delay-3 { transition-delay: 0.3s; }
+.fade-in-up.delay-4 { transition-delay: 0.4s; }
+.fade-in-up.delay-5 { transition-delay: 0.5s; }
+
+/* ----------------------------------------------------------
+   3. Typing Cursor (blinking caret)
+   ---------------------------------------------------------- */
+
+@keyframes caretBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.typing-cursor::after {
+  content: '|';
+  display: inline-block;
+  color: #00E5FF;
+  font-weight: 300;
+  margin-left: 2px;
+  animation: caretBlink 1s step-end infinite;
+}
+
+/* ----------------------------------------------------------
+   4. Orbit Ring Animation
+   ---------------------------------------------------------- */
+
+@keyframes orbitSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes orbitSpinReverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.orbit-ring {
+  animation: orbitSpin 8s linear infinite;
+}
+
+.orbit-ring-reverse {
+  animation: orbitSpinReverse 12s linear infinite;
+}
+
+/* ----------------------------------------------------------
+   5. Gradient Pulse (hero title shimmer)
+   ---------------------------------------------------------- */
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* ----------------------------------------------------------
+   6. Glow Pulse (accent elements)
+   ---------------------------------------------------------- */
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.3),
+                0 0 20px rgba(0, 229, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 229, 255, 0.6),
+                0 0 40px rgba(0, 229, 255, 0.25);
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Purple variant */
+@keyframes glowPulsePurple {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(124, 77, 255, 0.3),
+                0 0 20px rgba(124, 77, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(124, 77, 255, 0.6),
+                0 0 40px rgba(124, 77, 255, 0.25);
+  }
+}
+
+.glow-pulse-purple {
+  animation: glowPulsePurple 3s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------
+   7. Floating (subtle up-down bob)
+   ---------------------------------------------------------- */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------
+   8. Slide-In for Notification / Toast
+   ---------------------------------------------------------- */
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ----------------------------------------------------------
+   9. Scale Pop (button click / card hover)
+   ---------------------------------------------------------- */
+
+@keyframes scalePop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+.scale-pop {
+  animation: scalePop 0.3s ease;
+}
+
+/* ----------------------------------------------------------
+   10. Hero Section Entrance
+   ---------------------------------------------------------- */
+
+.hero-badge {
+  animation: fadeInDown 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-title {
+  animation: fadeInUp 0.7s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-subtitle {
+  animation: fadeInUp 0.7s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-cta {
+  animation: fadeInUp 0.7s 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-stats {
+  animation: fadeInUp 0.7s 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ----------------------------------------------------------
+   11. Terminal Scanline Effect
+   ---------------------------------------------------------- */
+
+@keyframes scanline {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+.terminal-scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 229, 255, 0.015) 2px,
+    rgba(0, 229, 255, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ----------------------------------------------------------
+   12. Reduced Motion Overrides
+   ---------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+  }
+}
