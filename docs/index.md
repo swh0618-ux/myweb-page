@@ -1,79 +1,169 @@
 ---
-title: Kazan | Vibe Coding Lab
-description: AI 에이전트와 페어 프로그래밍하여 창조하는 파이썬 기반 기술 블로그 & 포트폴리오
+title: KAZAN — AI-Native Vibe Coding Lab
+description: AI 에이전트와 함께 생각의 속도로 빌드하는 바이브코딩 포트폴리오
 hide:
   - navigation
   - toc
 ---
 
-<div class="vibe-hero">
-  <h1>⚡ KAZAN VIBE LAB</h1>
-  <p class="subtitle">
-    생각의 속도로 빌드하는 <b>바이브코딩(Vibe Coding)</b> 아카이브.<br>
-    AI 에이전트와의 밀도 높은 대화로 탄생한 실제 프로젝트와 테크 로그를 공유합니다.
-  </p>
-  <div class="vibe-tags-row">
-    <span class="vibe-badge">#VibeCoding</span>
-    <span class="vibe-badge purple">#AgenticAI</span>
-    <span class="vibe-badge">#PythonNative</span>
-    <span class="vibe-badge purple">#GitHubPages</span>
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="terminal-badge">$ vibe --mode=build</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="text-gradient">KAZAN</span>
+    </h1>
+    <p class="hero-subtitle" id="typing-target">AI와 함께 생각의 속도로 빌드합니다.</p>
+    <div class="hero-cta">
+      <a href="lab/" class="btn-primary">
+        <span>Explore Lab</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="signal/" class="btn-ghost">
+        <span>Read SIGNAL</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">4+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Posts</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Open Release</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit-ring"></div>
+    <div class="core-glow"></div>
   </div>
 </div>
 
 ---
 
-## 🔮 바이브코딩 선언 (The Vibe Manifesto)
+## <span class="section-eyebrow">LAB</span><br>대표 프로젝트
 
-> *"코드를 한 줄씩 타이핑하던 시대에서, 의도와 방향을 지휘하며 시스템을 오케스트레이션하는 시대로."*
+<div class="project-grid">
+  <a href="lab/antigravity-plugins/" class="project-card project-card--featured">
+    <div class="project-card-glow"></div>
+    <div class="project-card-inner">
+      <div class="project-card-top">
+        <span class="project-tag project-tag--agent">Agent & MCP</span>
+        <span class="project-arrow">↗</span>
+      </div>
+      <h3>Antigravity Plugins<br>&amp; MCP Suite</h3>
+      <p>AI 에이전트에게 브라우저 직접 제어·DOM 조작·스크린샷 캡처 능력을 부여하는 확장 플러그인 생태계.</p>
+      <div class="project-stack">
+        <span>MCP Protocol</span><span>Puppeteer</span><span>Node.js</span>
+      </div>
+    </div>
+  </a>
 
-전통적인 코딩이 벽돌을 한 장씩 쌓는 과정이었다면, **바이브코딩**은 아키텍처의 비전과 규칙을 제시하고 AI 에이전트와 호흡하며 빠른 속도로 프로토타입을 프로덕션으로 끌어올리는 창의적 실천입니다.
+  <a href="lab/python-vibe-vpn/" class="project-card">
+    <div class="project-card-inner">
+      <div class="project-card-top">
+        <span class="project-tag project-tag--security">Network & Security</span>
+        <span class="project-arrow">↗</span>
+      </div>
+      <h3>Python Vibe VPN</h3>
+      <p>ChaCha20-Poly1305 비동기 UDP 터널. 불필요한 원격 측정 없이 오직 보안과 속도에만 집중.</p>
+      <div class="project-stack">
+        <span>Python 3.11</span><span>asyncio</span><span>ChaCha20</span>
+      </div>
+    </div>
+  </a>
 
-```mermaid
-flowchart LR
-    Idea["💡 아이디어 & 감각 (Vibe)"] --> Agent["🤖 AI 에이전트 페어링"]
-    Agent --> Code["⚡ 초고속 구현 & 리팩토링"]
-    Code --> Deploy["🚀 GitHub Pages 즉시 배포"]
-```
+  <a href="lab/kazan-agent-hub/" class="project-card">
+    <div class="project-card-inner">
+      <div class="project-card-top">
+        <span class="project-tag project-tag--orchestration">Orchestration</span>
+        <span class="project-arrow">↗</span>
+      </div>
+      <h3>Kazan Agent Hub</h3>
+      <p>기획·코딩·QA 역할을 분담하는 자율 멀티에이전트 오케스트레이션 파이프라인.</p>
+      <div class="project-stack">
+        <span>Multi-Agent</span><span>Python</span><span>Antigravity</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="section-footer">
+  <a href="lab/" class="link-more">All Projects →</a>
+</div>
 
 ---
 
-## 🚀 대표 프로젝트 (Pinned Highlights)
+## <span class="section-eyebrow">SIGNAL</span><br>최신 테크 로그
 
-<div class="vibe-grid">
-  <div class="vibe-card">
-    <span class="vibe-badge">Agent Tooling & MCP</span>
-    <h3>Antigravity Plugins & MCP</h3>
-    <p>
-      AI 에이전트에게 브라우저 직접 제어, 화면 캡처, 로컬 시스템 도구 확장 능력을 부여하는 플러그인 생태계.
-    </p>
-    <a href="projects/antigravity-plugins.md" class="md-button md-button--primary">프로젝트 상세보기 →</a>
-  </div>
+<div class="signal-list">
+  <a href="signal/posts/2026-10-23-building-antigravity-plugins-mcp/" class="signal-item">
+    <div class="signal-meta">
+      <span class="signal-tag signal-tag--agent">Agent & MCP</span>
+      <span class="signal-date">Oct 23, 2026</span>
+    </div>
+    <h4>AI 에이전트에게 손과 발을 달아주다: 브라우저 제어 & MCP 플러그인 제작기</h4>
+    <span class="signal-read">7 min read</span>
+  </a>
 
-  <div class="vibe-card">
-    <span class="vibe-badge purple">Network & Security</span>
-    <h3>Python Vibe VPN</h3>
-    <p>
-      Python 3.11과 ChaCha20-Poly1305 기반 초경량 맞춤형 암호화 VPN 터널. 불필요한 원격 측정을 걷어낸 초고속 통신.
-    </p>
-    <a href="projects/python-vibe-vpn.md" class="md-button md-button--primary">프로젝트 상세보기 →</a>
-  </div>
+  <a href="signal/posts/2026-10-22-building-python-vpn-vibe-coding/" class="signal-item">
+    <div class="signal-meta">
+      <span class="signal-tag signal-tag--security">Security</span>
+      <span class="signal-date">Oct 22, 2026</span>
+    </div>
+    <h4>Python과 AI 에이전트로 초경량 암호화 VPN 터널 직접 제작해보기</h4>
+    <span class="signal-read">8 min read</span>
+  </a>
 
-  <div class="vibe-card">
-    <span class="vibe-badge">Orchestration</span>
-    <h3>Kazan Agent Hub</h3>
-    <p>
-      다양한 특화 서브에이전트(기획, 코딩, 리서치)를 하나의 워크스페이스에서 유기적으로 연결하는 자율 협업 파이프라인.
-    </p>
-    <a href="projects/kazan-agent-hub.md" class="md-button md-button--primary">프로젝트 상세보기 →</a>
+  <a href="signal/posts/2026-10-22-welcome-vibe-coding/" class="signal-item">
+    <div class="signal-meta">
+      <span class="signal-tag signal-tag--vibe">Vibe Coding</span>
+      <span class="signal-date">Oct 22, 2026</span>
+    </div>
+    <h4>바이브코딩 시대를 맞이하며: AI와 페어 프로그래밍하는 새로운 워크플로우</h4>
+    <span class="signal-read">5 min read</span>
+  </a>
+</div>
+
+<div class="section-footer">
+  <a href="signal/" class="link-more">All Signals →</a>
+</div>
+
+---
+
+## <span class="section-eyebrow">TOOLS</span><br>오픈소스 배포
+
+<div class="tools-banner">
+  <div class="tools-banner-content">
+    <div class="tools-icon">📦</div>
+    <div>
+      <h3>Python Vibe VPN v1.0.0</h3>
+      <p>클라이언트, 서버, 키 생성기, 설정 템플릿이 포함된 완전한 배포 패키지.</p>
+    </div>
+    <a href="tools/" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Download
+    </a>
   </div>
 </div>
 
 ---
 
-## 📝 최신 기술 & 프롬프트 로그
+## <span class="section-eyebrow">STACK</span><br>기술 스택
 
-* 🧩 [**AI 에이전트에게 손과 발을 달아주다: 브라우저 제어 & MCP 플러그인 제작기**](blog/posts/2026-10-23-building-antigravity-plugins-mcp.md) - 2026-10-23
-* 🔥 [**Python과 AI 에이전트로 초경량 암호화 VPN 터널 직접 제작해보기**](blog/posts/2026-10-22-building-python-vpn-vibe-coding.md) - 2026-10-22
-* 📌 [**바이브코딩 시대를 맞이하며: AI와 페어 프로그래밍하는 새로운 워크플로우**](blog/posts/2026-10-22-welcome-vibe-coding.md) - 2026-10-22
-* 💡 [모든 프로젝트 아카이브 둘러보기](projects/index.md)
-* 👤 [Kazan의 프로필 및 기술 스택 확인하기](about.md)
+<div class="stack-grid">
+  <div class="stack-item"><span class="stack-icon">🤖</span><span>Antigravity</span></div>
+  <div class="stack-item"><span class="stack-icon">♊</span><span>Gemini</span></div>
+  <div class="stack-item"><span class="stack-icon">🐍</span><span>Python 3.11</span></div>
+  <div class="stack-item"><span class="stack-icon">⚡</span><span>asyncio</span></div>
+  <div class="stack-item"><span class="stack-icon">🔗</span><span>MCP Protocol</span></div>
+  <div class="stack-item"><span class="stack-icon">🌐</span><span>Puppeteer</span></div>
+  <div class="stack-item"><span class="stack-icon">📦</span><span>MkDocs</span></div>
+  <div class="stack-item"><span class="stack-icon">🚀</span><span>GitHub Pages</span></div>
+</div>

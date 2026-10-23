@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="kg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C4DFF"/>
+    </linearGradient>
+  </defs>
+  <!-- Background hexagon -->
+  <polygon
+    points="24,3 43,13.5 43,34.5 24,45 5,34.5 5,13.5"
+    fill="url(#kg)"
+    opacity="0.15"
+  />
+  <!-- K letterform -->
+  <line x1="15" y1="12" x2="15" y2="36" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="15" y1="24" x2="33" y2="12" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="15" y1="24" x2="33" y2="36" stroke="url(#kg)" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

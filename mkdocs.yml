@@ -1,5 +1,5 @@
-site_name: "Kazan | Vibe Coding Lab"
-site_description: "AI 에이전트와 함께 빌드하는 바이브코딩 포트폴리오 & 테크 블로그"
+site_name: "KAZAN"
+site_description: "AI 네이티브 개발자의 바이브코딩 랩 — 프로젝트, 기술 로그, 오픈소스 도구"
 site_author: "Kazan"
 site_url: "https://kazan.pe.kr/"
 repo_url: "https://github.com/swh0618-ux/myweb-page"
@@ -10,45 +10,46 @@ theme:
   custom_dir: overrides
   language: ko
   palette:
-    # 🌙 Vibe Coding Dark Mode (Default)
     - scheme: slate
-      primary: cyan
-      accent: deep purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
-        name: "라이트 모드로 전환"
-    # ☀️ Clean Light Mode
+        name: "Light mode"
     - scheme: default
-      primary: cyan
-      accent: deep purple
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
-        name: "다크 모드로 전환"
+        name: "Dark mode"
   font:
-    text: Pretendard, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
-    code: Fira Code, JetBrains Mono, monospace
+    text: Pretendard Variable
+    code: Fira Code
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
   features:
     - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
-    - content.tabs.link
 
 plugins:
-  - search
+  - search:
+      lang: ko
   - blog:
-      blog_dir: blog
+      blog_dir: signal
       post_dir: posts
       post_url_format: "{date}/{slug}"
-      pagination_per_page: 5
+      pagination_per_page: 8
       authors: true
-      authors_file: blog/.authors.yml
+      authors_file: signal/.authors.yml
 
 markdown_extensions:
   - admonition
@@ -77,28 +78,34 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/design.css
+  - stylesheets/animations.css
+
+extra_javascript:
+  - javascripts/main.js
 
 nav:
-  - "Home": index.md
-  - "Projects": 
-      - "Overview": projects/index.md
-      - "Antigravity Plugins": projects/antigravity-plugins.md
-      - "Python Vibe VPN": projects/python-vibe-vpn.md
-      - "Kazan Agent Hub": projects/kazan-agent-hub.md
-      - "Item Asset Forge": projects/item-asset-forge.md
-  - "Vibe Logs": 
-      - blog/index.md
-  - "About": about.md
-  - "Privacy": privacy.md
+  - HOME: index.md
+  - LAB:
+      - "All Projects": lab/index.md
+      - "Antigravity Plugins & MCP": lab/antigravity-plugins.md
+      - "Python Vibe VPN": lab/python-vibe-vpn.md
+      - "Kazan Agent Hub": lab/kazan-agent-hub.md
+      - "Item Asset Forge": lab/item-asset-forge.md
+  - SIGNAL:
+      - signal/index.md
+  - TOOLS: tools/index.md
+  - ABOUT: about.md
 
 extra:
-  # 구글 애드센스 퍼블리셔 ID
   google_adsense_client: "ca-pub-4587488147003975"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/swh0618-ux
+      name: GitHub
     - icon: fontawesome/brands/discord
       link: https://discord.com
+      name: Discord
     - icon: fontawesome/solid/envelope
       link: mailto:your-email@example.com
+      name: Email
